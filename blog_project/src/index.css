@@ -1,0 +1,246 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container{
+  display:flex;
+  background-color: black;
+  height: 100vh;
+}
+
+.form {
+  flex:1;
+  background-color: aqua;
+  /* position: absolute; */
+  border: 1px solid;
+   /* width: 450px; */
+   border-radius: 15px;
+  height:100vh;
+  padding: 15px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
+.blogs-container{
+  flex:2;
+  background-color:greenyellow;
+  overflow: scroll;
+  /* position: absolute; */
+  border: 1px solid;
+  border-radius: 15px;
+  /* width: 450px; */
+  height: 100vh;
+  padding: 5px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
+.empty-container{
+  position: absolute;
+  left: 750px;
+  top: 250px;
+}
+.blogs-container .empty-container h1{
+  font-size: 60px;
+  color: black;
+  font-style: italic;
+}
+.mheading{
+  padding: 5px;
+  margin: 0px;
+  width: 415px;
+  font-size: 18px;
+  display: block;
+  border-radius: 5px;
+}
+.mheadingcategory{
+  padding: 5px;
+  font-size: 18px;
+  margin:0px;
+  /* display:flex; */
+  /* background-color: blueviolet; */
+  border-radius: 5px;
+}
+
+input[type="option"],
+input[type="text"],
+input[type="email"],
+input[type="phone"] {
+  padding: 5px;
+  margin: 0px;
+  width: 415px;
+  font-size: 18px;
+  display: block;
+  border-radius: 5px;
+  background-color: beige;
+}
+.area textarea{
+  border-radius: 15px;
+  background-color: beige;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 5px;
+  margin: 0px;
+  font-size: 18px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+
+.blog-container{
+  position: relative;
+  width: 600px;
+  height: 570px;
+  border: 3px solid;
+  display: inline-block;
+  margin: 5px;
+  background-color: antiquewhite;
+  border-radius: 15px;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.blog-container h1{
+  position:absolute;
+  top: 0px;
+  left: 20px;
+  bottom: 5px;
+  font-weight: bold;
+  font-size: 30px;
+  font-style: italic;
+  height:40px;
+  width:90%;
+  padding:5px;
+  /* border: 2px solid; */
+  border-radius: 5px;
+}
+
+.blog-title {
+  position:absolute;
+  top: 70px;
+  left: 20px;
+  font-weight: bold;
+  font-size: 24px;
+  font-style: italic;
+  height:40px;
+  width:90%;
+  padding:5px;
+  border: 2px solid;
+  border-radius: 5px;
+  background-color: beige;
+  color: #298e46;
+}
+.blog-body {
+  position: absolute;
+  top: 140px;
+  left: 20px;
+  height: 300px;
+  width: 90%;
+  font-weight: bold;
+  font-size: 20px;
+  font-style: italic;
+  border: 2px solid;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: beige;
+}
+
+/* CSS */
+.button-3 {
+  appearance: none;
+  background-color: rgb(255, 114, 114);
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: rgb(244, 233, 233);
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  left: 435px;
+}
+
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-3:hover {
+  background-color: #2c974b;
+}
+
+.button-3:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-3:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button-3:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+.btn-remove{
+  top: 530px;
+  left:500px;
+}
+.btn-edit{
+  top: 530px;
+  left:435px;
+}
+.btn-add{
+  top: 600px;
+  left:20px;
+  background-color: #2c974b;
+}
+.select-btn select {
+  padding: 5px;
+  margin: 0px;
+  width: 430px;
+  font-size: 18px;
+  display: block;
+  border-radius: 5px;
+}
+
+.blog-author {
+  position: absolute;
+  top: 465px;
+  left: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.blog-category {
+  position: absolute;
+  top: 500px;
+  left: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
